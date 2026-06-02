@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahid Ali Mansuri | Digital Artist & Web Developer</title>
+    <link rel="shortcut icon" href="assets/portfolio-bag-svgrepo-com.svg" type="image/x-icon">
+    <meta name="description" content="Portfolio of Shahid Ali Mansuri, a Web Developer & Digital Artist.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Canvas for Stars Background -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand">SAM</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Shahid Ali Mansuri">Shahid Ali Mansuri</h1>
+                <h2 class="subtitle" id="typing-text"><span class="cursor">|</span></h2>
+                <p class="intro">Crafting futuristic digital experiences across the cosmos.</p>
+                <a href="#projects" class="btn-primary">Explore My Universe</a>
+            </div>
+            <div class="hero-saturn-wrapper">
+                <div class="saturn-container">
+                    <div class="saturn-body">
+                        <div class="saturn-surface"></div>
+                    </div>
+                    <div class="saturn-ring"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/assets/portfolio.jpg" alt="Shahid Ali Mansuri">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="about-text glass-card">
+                    <h3>Journey Through Space & Code</h3>
+                    <p>I am a passionate Web Developer and Digital Artist specializing in crafting visually stunning,
+                        highly interactive, and futuristic web experiences. My work blends cutting-edge web technologies
+                        with an artistic flair.</p>
+                    <p>With a deep love for cosmic aesthetics and modern UI/UX principles, I build digital landscapes
+                        that leave a lasting impression. Every line of code is a star in the galaxy of my creations.</p>
+                    <div class="hobbies">
+                        <h4>Beyond the Code</h4>
+                        <div class="hobby-tags">
+                            <span><i class="fas fa-basketball-ball"></i> Basketball</span>
+                            <span><i class="fas fa-music"></i> Music Enthusiast</span>
+                            <span><i class="fas fa-skating"></i> Skateboarding</span>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">69%</span>
+                            <span class="stat-label">Cosmic Energy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">React / Vue</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Creative & Tools</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Social Media</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">Music Research</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nebula UI Library</h3>
+                        <p>A cutting-edge UI component library built with vanilla JS and CSS variables for cosmic-themed
+                            applications.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="project-info">
+                        <h3>Orbit E-Commerce</h3>
+                        <p>A fully responsive e-commerce platform with 3D product previews and a seamless checkout
+                            experience.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Three.js</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="project-info">
+                        <h3>Event Horizon Dashboard</h3>
+                        <p>A futuristic analytics dashboard that visualizes complex data streams using glowing charts
+                            and graphs.</p>
+                        <div class="tech-stack">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card glass-card active">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="review">"Shahid completely transformed our online presence. His designs are truly out of
+                        this world and performance is stellar!"</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Client 1">
+                        <div>
+                            <h4>Elena Rostova</h4>
+                            <span>CEO, TechNova</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="review">"Working with Shahid was a fantastic experience. His attention to detail and
+                        cosmic aesthetics set him apart."</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Client 2">
+                        <div>
+                            <h4>Marcus Vance</h4>
+                            <span>Creative Director, Orion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="review">"A rare combination of highly technical skills and brilliant artistry. The
+                        resulting web app was mesmerizing."</p>
+                    <div class="client-info">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Client 3">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span>Founder, Stellar Startups</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">SAM</div>
+                <p>Designed and built with cosmic energy.</p>
+                <div class="social-links">
+                    <a href="https://github.com/shahidalimansuri" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shahidalimansuri/" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/shahid.ali.mansuri/" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shahid Ali Mansuri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
